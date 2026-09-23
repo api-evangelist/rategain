@@ -1,0 +1,50 @@
+{
+  "@context": {
+    "@vocab": "https://rategain.com/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "rategain": "https://rategain.com/schema#",
+    "GetOurProductsChannelManagerRgBridgeReservationRetrievalPull": "rategain:GetOurProductsChannelManagerRgBridgeReservationRetrievalPull",
+    "OTA_ResRetrieveRS": {
+      "@id": "rategain:OTA_ResRetrieveRS",
+      "@type": "xsd:string"
+    },
+    "GetOurProductsChannelManagerRgBridgeSupplyPushInterfaceSpeci": "rategain:GetOurProductsChannelManagerRgBridgeSupplyPushInterfaceSpeci",
+    "OTA_HotelRateAmountNotifRS": {
+      "@id": "rategain:OTA_HotelRateAmountNotifRS"
+    },
+    "Success": {
+      "@id": "rategain:Success"
+    },
+    "Errors": {
+      "@id": "rategain:Errors"
+    },
+    "Error": {
+      "@id": "rategain:Error"
+    },
+    "Error.Type": {
+      "@id": "rategain:Error.Type",
+      "@type": "xsd:string"
+    },
+    "Error.Code": {
+      "@id": "rategain:Error.Code",
+      "@type": "xsd:string"
+    },
+    "Error.RecordID": {
+      "@id": "rategain:Error.RecordID",
+      "@type": "xsd:string"
+    },
+    "Error.text": {
+      "@id": "rategain:Error.text",
+      "@type": "xsd:string"
+    }
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "RateGain API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects RateGain's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-09-23) from openapi/_ae-authored/rategain-openapi-generated.yml.",
+  "dcterms:created": "2026-09-23",
+  "dcterms:source": [
+    "openapi/_ae-authored/rategain-openapi-generated.yml"
+  ]
+}

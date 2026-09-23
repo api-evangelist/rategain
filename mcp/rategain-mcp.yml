@@ -1,0 +1,45 @@
+generated: '2026-09-23'
+method: derived
+generator: derive-mcp-candidate.py
+source:
+- openapi/_ae-authored/rategain-openapi-generated.yml
+status: candidate
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+note: 'No MCP server was found. The pre-flight posted tools/list to /mcp on api.rategain.com, rategain.com, content.rategain.com, developer.rategain.com;
+  verdict gated (https://content.rategain.com/mcp answered 401: the edge authenticates before it routes, which proves nothing either way). Candidate
+  tools below are derived from the 6 operation(s) in the provider''s own OpenAPI (6 listed); they describe what a server WOULD expose, not one
+  that exists.'
+tools:
+- name: get_developer_portal_md
+  operationId: get_developer_portal_md
+  method: GET
+  path: /developer-portal.md
+  description: Developer Portal
+- name: get_our_products_channel_manager_rg_bridge_reservation_retri
+  operationId: get_our_products_channel_manager_rg_bridge_reservation_retrieval_pull_operations
+  method: GET
+  path: /our-products/channel-manager/rg-bridge-reservation-retrieval-pull/operations/reservation-confirmation/{reservationconfirmationid}
+  description: Reservation confirmation request; Sample XML
+- name: get_our_products_channel_manager_rg_bridge_supply_push_inter
+  operationId: get_our_products_channel_manager_rg_bridge_supply_push_interface_specifications_
+  method: GET
+  path: /our-products/channel-manager/rg-bridge-supply-push/interface-specifications-availability-and-rates-notification-service/operations/availability-notification/ota_hotelavailnotifrq/change-in-availability-status-and-restrictions.md
+  description: Change in availability status and Restrictions
+- name: get_our_products_smart_distribution_developer_guide_md
+  operationId: get_our_products_smart_distribution_developer_guide_md
+  method: GET
+  path: /our-products/smart-distribution/developer-guide.md
+  description: Developer Guide
+- name: get_our_products_smart_distribution_pre_book_pre_book_api_md
+  operationId: get_our_products_smart_distribution_pre_book_pre_book_api_md
+  method: GET
+  path: /our-products/smart-distribution/pre-book/pre-book-api.md
+  description: Pre Book API
+- name: get_ultradirect_ultradirect_transaction_sets_xml_reference_d
+  operationId: get_ultradirect_ultradirect_transaction_sets_xml_reference_data_transactions_res
+  method: GET
+  path: /ultradirect/ultradirect-transaction-sets-xml/reference-data-transactions/response-message-format..md
+  description: Response message format.

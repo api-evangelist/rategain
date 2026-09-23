@@ -1,23 +1,107 @@
 aid: rategain
+
 name: RateGain
-description: 'RateGain is a company surfaced via the API Evangelist harvest backlog (source: travel) and
-  added to the network as a stub for full-pipeline profiling.'
+
+image: https://rategain.com/wp-content/uploads/2019/09/HOME-PAGE.jpg
+
+description: RateGain provides a comprehensive suite of hospitality and travel software solutions, including channel management, rate intelligence,
+  revenue management, and marketing tools for hotels, OTAs, airlines, and car rentals. Their platform integrates with GDS, offers AI-driven concierge
+  services, and supports data monetization and first‑party data enrichment for travel brands.
+
 url: https://raw.githubusercontent.com/api-evangelist/rategain/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:travel
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-23'
+
 modified: '2026-09-23'
+
 tags:
 - Company
-apis: []
+- Hospitality
+- TravelTech
+- SaaS
+- RevenueManagement
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Vendors
+  url: vendors/rategain-vendors.yml
+- type: Spectral
+  url: rules/rategain-rules.yml
+- type: JSONLD
+  url: json-ld/rategain-context.jsonld
+- type: Vocabulary
+  url: vocabulary/rategain-vocabulary.yml
+- type: DataModel
+  url: data-model/rategain-data-model.yml
+- type: Authentication
+  url: authentication/rategain-authentication.yml
+- type: Conformance
+  url: conformance/rategain-conformance.yml
+- type: LLMsTxt
+  url: llms/rategain-llms.txt
+- type: SecurityTxt
+  url: well-known/rategain-it-security.txt
+- type: WellKnown
+  url: well-known/rategain-well-known.yml
+- type: Hosts
+  url: hosts/rategain-hosts.yml
+- type: TermsOfService
+  url: https://rategain.com/terms-use
+- type: PrivacyPolicy
+  url: https://rategain.com/privacy-policy
+- type: Pricing
+  url: https://rategain.com/plans/
+- type: Login
+  url: https://content.rategain.com/shares/view/room/login/690b1b479886dc4f9eced3ce
+- type: GettingStarted
+  url: https://developer.rategain.com/our-products/channel-manager/integration-and-onboarding-flow
+- type: Documentation
+  url: https://developer.rategain.com/
+- type: DomainSecurity
+  url: security/rategain-domain-security.yml
 - type: Website
   url: https://rategain.com/
+
+apis:
+- aid: rategain:rategain-api
+  name: RateGain API
+  description: 'RateGain API as documented publicly: 9 operations. Contract generated from the documentation by API Evangelist (2026-09-23); not
+    the provider''s own document.'
+  humanURL: https://developer.rategain.com/our-products/channel-manager/rg-bridge-supply-push/interface-specifications-availability-and-rates-notification-service/operations/availability-notification/ota_hotelavailnotifrq/change-in-availability-status-and-restrictions.md
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/rategain-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/rategain-get-our-products-channel-manager-rg-bridge-supply-push-interface-speci-schema.json
+  - type: JSONSchema
+    url: json-schema/rategain-get-our-products-channel-manager-rg-bridge-reservation-retrieval-pull-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: Documentation pages exist but no OpenAPI or other machine-readable contract is published.
+  evidence:
+  - url: https://developer.rategain.com/our-products/smart-distribution/page/smart-distribution-api.md
+    status: 200
+  checked: '2026-09-23'
+x-enrichment:
+  date: '2026-09-23'
+  status: enriched
+  artifacts_added: 21
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local

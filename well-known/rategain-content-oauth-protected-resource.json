@@ -1,0 +1,1 @@
+{"resource":"https://content.rategain.com/mcp","authorization_servers":["https://content.rategain.com"],"bearer_methods_supported":["header"],"scopes_supported":["openid","profile","offline","email","library.read.team.content","library.read.adoption","lms.read.all","lms.read.courses","lms.read.enrollments","scim.read.all","scim.write.all","mcp.all"]}
