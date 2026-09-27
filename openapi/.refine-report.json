@@ -1,0 +1,20 @@
+{
+  "provider": "rategain",
+  "sources": [
+    "_ae-authored/rategain-openapi-generated.yml"
+  ],
+  "outputs": [
+    "rategain-developer-portal-api-openapi.yml",
+    "rategain-our-products-api-openapi.yml",
+    "rategain-ultradirect-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "rategain-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: written (+3 apis, 3 total)"
+  ],
+  "skipped": []
+}

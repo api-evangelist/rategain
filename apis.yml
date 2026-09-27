@@ -26,6 +26,12 @@ modified: '2026-09-23'
 tags:
 - Company
 - Hospitality
+- Travel Tech
+- Software-as-a-Service
+- Revenue Management
+tags_raw:
+- Company
+- Hospitality
 - TravelTech
 - SaaS
 - RevenueManagement
@@ -77,20 +83,54 @@ common:
   url: https://rategain.com/
 
 apis:
-- aid: rategain:rategain-api
-  name: RateGain API
-  description: 'RateGain API as documented publicly: 9 operations. Contract generated from the documentation by API Evangelist (2026-09-23); not
-    the provider''s own document.'
-  humanURL: https://developer.rategain.com/our-products/channel-manager/rg-bridge-supply-push/interface-specifications-availability-and-rates-notification-service/operations/availability-notification/ota_hotelavailnotifrq/change-in-availability-status-and-restrictions.md
+- aid: rategain:rategain-developer-portal-api
+  name: RateGain Developer Portal API
+  description: The Developer Portal API from RateGain — 1 operation(s) for developer portal.
+  humanURL: >-
+    https://developer.rategain.com/our-products/channel-manager/rg-bridge-supply-push/interface-specifications-availability-and-rates-notification-service/operations/availability-notification/ota_hotelavailnotifrq/change-in-availability-status-and-restrictions.md
+  tags:
+  - Developer Portal
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/rategain-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/rategain-developer-portal-api-openapi.yml
   - type: JSONSchema
-    url: json-schema/rategain-get-our-products-channel-manager-rg-bridge-supply-push-interface-speci-schema.json
+    url: >-
+      json-schema/rategain-get-our-products-channel-manager-rg-bridge-supply-push-interface-speci-schema.json
   - type: JSONSchema
-    url: json-schema/rategain-get-our-products-channel-manager-rg-bridge-reservation-retrieval-pull-schema.json
-
+    url: >-
+      json-schema/rategain-get-our-products-channel-manager-rg-bridge-reservation-retrieval-pull-schema.json
+- aid: rategain:rategain-our-products-api
+  name: RateGain Our Products API
+  description: The Our Products API from RateGain — 7 operation(s) for our products.
+  humanURL: >-
+    https://developer.rategain.com/our-products/channel-manager/rg-bridge-supply-push/interface-specifications-availability-and-rates-notification-service/operations/availability-notification/ota_hotelavailnotifrq/change-in-availability-status-and-restrictions.md
+  tags:
+  - Our Products
+  properties:
+  - type: OpenAPI
+    url: openapi/rategain-our-products-api-openapi.yml
+  - type: JSONSchema
+    url: >-
+      json-schema/rategain-get-our-products-channel-manager-rg-bridge-supply-push-interface-speci-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/rategain-get-our-products-channel-manager-rg-bridge-reservation-retrieval-pull-schema.json
+- aid: rategain:rategain-ultradirect-api
+  name: RateGain Ultradirect API
+  description: The Ultradirect API from RateGain — 1 operation(s) for ultradirect.
+  humanURL: >-
+    https://developer.rategain.com/our-products/channel-manager/rg-bridge-supply-push/interface-specifications-availability-and-rates-notification-service/operations/availability-notification/ota_hotelavailnotifrq/change-in-availability-status-and-restrictions.md
+  tags:
+  - Ultradirect
+  properties:
+  - type: OpenAPI
+    url: openapi/rategain-ultradirect-api-openapi.yml
+  - type: JSONSchema
+    url: >-
+      json-schema/rategain-get-our-products-channel-manager-rg-bridge-supply-push-interface-speci-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/rategain-get-our-products-channel-manager-rg-bridge-reservation-retrieval-pull-schema.json
 x-coverage:
   state: unreadable
   reason: no-machine-readable-spec

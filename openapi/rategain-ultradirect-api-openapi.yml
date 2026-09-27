@@ -1,0 +1,92 @@
+openapi: 3.2.0
+info:
+  title: RateGain Ultradirect API
+  version: '2026-09-23'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-09-23: 9 operation(s) read from 40 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; RateGain has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 0
+    documentation: 9
+    pages-with-code: 0
+    pages-read: 40
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-09-23'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-supply-push/interface-specifications-availability-and-rates-notification-service/operations/availability-notification/ota_hotelavailnotifrq/change-in-availability-status-and-restrictions.md
+  - https://developer.rategain.com/our-products/smart-distribution/book-and-cancel-reservation/book-api/book-reservation.md
+  - https://developer.rategain.com/our-products/smart-distribution/pre-book/pre-book-api/pre-book-request-message-format.md
+  - https://developer.rategain.com/our-products/smart-distribution/book-and-cancel-reservation/book-api/cancel-reservation.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-reservation-retrieval-pull/operations/reservation-retrieval.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-reservation-retrieval-pull/operations/reservation-confirmation.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-reservation-retrieval-pull/operations/reservation-retrieval/ota_readrq.md
+  - https://developer.rategain.com/our-products/smart-distribution/book-and-cancel-reservation/book-api/cancel-reservation-request-message-format.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-reservation-retrieval-pull/operations/reservation-retrieval/ota_resretrievers.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-reservation-retrieval-pull/operations/reservation-confirmation/ota_notifreportrq.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-reservation-retrieval-pull/operations/reservation-confirmation/ota_notifreportrs.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-reservation-retrieval-pull/operations/reservation-retrieval/xml-usage-specification.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-reservation-retrieval-pull/operations/reservation-retrieval/xml-usage-specification-1.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-reservation-retrieval-pull/operations/reservation-confirmation/xml-usage-specification.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-reservation-retrieval-pull/operations/reservation-confirmation/xml-usage-specification-1.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-supply-push/interface-specifications-reservation-notification-service/operations/reservation-notification.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-supply-push/interface-specifications-availability-and-rates-notification-service/operations/points-to-remember.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-supply-push/interface-specifications-availability-and-rates-notification-service/operations/rate-change-notification.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-supply-push/interface-specifications-availability-and-rates-notification-service/operations/availability-notification.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-supply-push/interface-specifications-reservation-notification-service/operations/reservation-notification/ota_hotelresnotifrq.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-supply-push/interface-specifications-reservation-notification-service/operations/reservation-notification/ota_hotelresnotifrs.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-supply-push/interface-specifications-reservation-notification-service/operations/reservation-notification/xml-usage-specification-1.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-supply-push/interface-specifications-reservation-notification-service/operations/reservation-notification/sample-reservation-messages.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-supply-push/interface-specifications-availability-and-rates-notification-service/operations/rate-change-notification/xml-usage-description.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-supply-push/interface-specifications-availability-and-rates-notification-service/operations/availability-notification/ota_hotelavailnotifrq.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-supply-push/interface-specifications-availability-and-rates-notification-service/operations/availability-notification/ota_hotelavailnotifrs.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-supply-push/interface-specifications-availability-and-rates-notification-service/operations/rate-change-notification/xml-usage-specification.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-supply-push/interface-specifications-availability-and-rates-notification-service/operations/availability-notification/xml-usage-specification.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-supply-push/interface-specifications-availability-and-rates-notification-service/operations/rate-change-notification/ota_hotelrateamountnotifrq.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-supply-push/interface-specifications-availability-and-rates-notification-service/operations/rate-change-notification/ota_hotelrateamountnotifrs.md
+  - https://developer.rategain.com/our-products/channel-manager/rg-bridge-supply-push/interface-specifications-availability-and-rates-notification-service/operations/availability-notification/ota_hotelavailnotifrq/change-in-inventory-count.md
+  - https://developer.rategain.com/ultradirect/ultradirect-transaction-sets-xml/reference-data-transactions.md
+  - https://developer.rategain.com/ultradirect/ultradirect-transaction-sets-xml/reference-data-transactions/appendix.md
+  - https://developer.rategain.com/ultradirect/ultradirect-transaction-sets-xml/reference-data-transactions/request-message-format..md
+  - https://developer.rategain.com/ultradirect/ultradirect-transaction-sets-xml/reference-data-transactions/response-message-format..md
+  - https://developer.rategain.com
+  - https://developer.rategain.com/developer-portal.md
+  - https://developer.rategain.com/ratehub/hotel-property-data-api.md
+  - https://developer.rategain.com/our-products/smart-distribution/developer-guide.md
+  - https://developer.rategain.com/our-products/smart-distribution/pre-book/pre-book-api.md
+security:
+- Basic_Authorization: []
+- ApiKey: []
+- ApiSecret: []
+tags:
+- name: Ultradirect
+paths:
+  /ultradirect/ultradirect-transaction-sets-xml/reference-data-transactions/response-message-format..md:
+    get:
+      operationId: get_ultradirect_ultradirect_transaction_sets_xml_reference_data_transactions_res
+      tags:
+      - Ultradirect
+      summary: Response message format
+      x-source: https://developer.rategain.com/ultradirect/ultradirect-transaction-sets-xml/reference-data-transactions/response-message-format..md
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+components:
+  securitySchemes:
+    Basic_Authorization:
+      type: http
+      scheme: basic
+      x-source: https://developer.rategain.com/our-products/channel-manager/direct-connect-demand-push/interface-specifications-reservation-notification-service/technical-overview/authentication.md
+    ApiKey:
+      type: apiKey
+      in: header
+      name: ApiKey
+      x-source: https://developer.rategain.com/our-products/channel-manager/direct-connect-demand-push/interface-specifications-reservation-notification-service/technical-overview/authentication.md
+    ApiSecret:
+      type: apiKey
+      in: header
+      name: ApiSecret
+      x-source: https://developer.rategain.com/our-products/channel-manager/direct-connect-demand-push/interface-specifications-reservation-notification-service/technical-overview/authentication.md
