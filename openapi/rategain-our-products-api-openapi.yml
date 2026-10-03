@@ -191,6 +191,12 @@ paths:
         kind: documentation
 components:
   schemas:
+    GetOurProductsChannelManagerRgBridgeReservationRetrievalPull:
+      type: object
+      properties:
+        OTA_ResRetrieveRS:
+          type: string
+          description: Response message providing the list of new reservations; may include a ReservationsList node and a MoreIndicator attribute.
     GetOurProductsChannelManagerRgBridgeSupplyPushInterfaceSpeci:
       type: object
       properties:
@@ -218,12 +224,6 @@ components:
         Error.text:
           type: string
           description: Human‑readable error message
-    GetOurProductsChannelManagerRgBridgeReservationRetrievalPull:
-      type: object
-      properties:
-        OTA_ResRetrieveRS:
-          type: string
-          description: Response message providing the list of new reservations; may include a ReservationsList node and a MoreIndicator attribute.
   securitySchemes:
     Basic_Authorization:
       type: http
