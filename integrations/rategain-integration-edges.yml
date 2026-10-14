@@ -1,8 +1,10 @@
 generated: '2026-10-14'
 method: searched
 checked:
+- https://rategain.com/
 - mews-com/integrations/mews-com-integration-edges.yml
 source:
+- https://rategain.com/
 - mews-com/integrations/mews-com-integration-edges.yml
 edges:
 - partner_name: Mews (own)
@@ -22,3 +24,12 @@ edges:
   listing_count: 2
   detected: '2026-10-14'
   detected_by: mirror-platform-listings.py
+marketplace_apps:
+- marketplace: own
+  channel: partner-built
+  app: rategain
+  url: https://rategain.com/
+  app_count: null
+  adapter: sweep-hospitality.py:unreadable
+  listed: 0
+  status: not-machine-readable (HTTP 200; a 269-byte JavaScript challenge to every non-browser request)
